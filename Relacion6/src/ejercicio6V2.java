@@ -12,10 +12,12 @@ public class ejercicio6V2 {
         System.out.println("Introduce una frase: ");
         cadena = entrada.nextLine();
 
-        for (i=cadena.length(); i>=0; i--){
+        for (i=cadena.length()-1; i>=0; i--){
             caracter=cadena.charAt(i);
             cadenaInvertida = cadenaInvertida + caracter;
         }
+
+        System.out.println("La cadena invertida es: " + cadenaInvertida);
 
         entrada.close();
     }
